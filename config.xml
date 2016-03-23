@@ -22,7 +22,7 @@
   
 
 <preference name="SplashMaintainAspectRatio" value="true|false" />
-<preference name="SplashShowOnlyFirstTime" value="true|false" />
+<preference name="SplashShowOnlyFirstTime" value="false" />
 
  <preference name="android-minSdkVersion" value="15" /> 
 

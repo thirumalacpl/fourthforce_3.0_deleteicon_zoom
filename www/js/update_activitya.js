@@ -709,8 +709,9 @@ document.getElementById('remarkg').value = "";
   //$("input[type='radio']:first").attr("checked", "checked");
 //alert(region);
 //alert(user_id);
+ alert('Verification Record Submitted Successfully');
 
-alert('Verification Record Submitted Successfully bfr sdsdf');
+//alert('Verification Record Submitted Successfully bfr sdsdf');
 // $('#myPopupr').hide();
 $.ajax({url: 'http://staging.eimpressive.com/slim/slim_four_rips/count.php?region='+region+"&user_id="+user_id+"&state="+state,
   data:$('#update_to_inprogressw').serialize(),
@@ -742,7 +743,7 @@ $.ajax({url: 'http://staging.eimpressive.com/slim/slim_four_rips/count.php?regio
 
 
       $.mobile.loading().hide();
-      alert('Verification Record Submitted Successfully');
+     
       $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 //$.mobile.changePage("dashboard",{ transition: "none", changeHash: true, reverse: false }); 
 }else {

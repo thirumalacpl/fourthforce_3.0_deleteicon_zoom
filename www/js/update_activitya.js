@@ -709,7 +709,7 @@ document.getElementById('remarkg').value = "";
   //$("input[type='radio']:first").attr("checked", "checked");
 //alert(region);
 //alert(user_id);
- alert('Verification Record Submitted Successfully');
+
 
 //alert('Verification Record Submitted Successfully bfr sdsdf');
 // $('#myPopupr').hide();
@@ -740,7 +740,7 @@ $.ajax({url: 'http://staging.eimpressive.com/slim/slim_four_rips/count.php?regio
          sessionStorage.setItem("supervisor_activity_log_array",JSON.stringify(result[8]));
     sessionStorage.setItem("supervisor_final_command_array",JSON.stringify(result[9]));
 
-
+ alert('Verification Record Submitted Successfully');
 
       $.mobile.loading().hide();
      

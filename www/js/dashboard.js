@@ -1,6 +1,6 @@
 $(document).on('pageshow', '#dashboard', function(){  
 
-//alert("dashboard stage");
+//alert("dashboard");
 
 regionArray_array =  JSON.parse(sessionStorage.getItem("regionArray"));
 //usernamearray =  JSON.parse(sessionStorage.getItem("usernamearray"));

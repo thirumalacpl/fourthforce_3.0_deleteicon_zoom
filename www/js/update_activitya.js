@@ -507,7 +507,7 @@ $.ajax({
 
 function onError(data, status)
 {
-alert("Network Error");
+alert("Network error: Please check your internet connection");
 }        
 
 var settings = {
@@ -670,6 +670,8 @@ $.ajax({
 
 if(loginistant != '' && status_val_inpro == 'Inprogress'){
 
+
+
 $.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
   options.async = true;
 });
@@ -699,7 +701,7 @@ document.getElementById('remarkg').value = "";
 return false;
 }
 
-if(remarkg != ''  && status_val_inpro != 'Inprogress' ){
+if(remarkg != ''  && status_val_inpro != 'Inprogress' ){ 
 //alert('dads');
   document.getElementById('messageText').value = "";
 document.getElementById('remarkg').value = "";
@@ -708,8 +710,8 @@ document.getElementById('remarkg').value = "";
 //alert(region);
 //alert(user_id);
 
-alert('Verification Record Submitted Successfully');
-
+alert('Verification Record Submitted Successfully bfr sdsdf');
+// $('#myPopupr').hide();
 $.ajax({url: 'http://staging.eimpressive.com/slim/slim_four_rips/count.php?region='+region+"&user_id="+user_id+"&state="+state,
   data:$('#update_to_inprogressw').serialize(),
   type: 'post',                   
@@ -737,7 +739,10 @@ $.ajax({url: 'http://staging.eimpressive.com/slim/slim_four_rips/count.php?regio
          sessionStorage.setItem("supervisor_activity_log_array",JSON.stringify(result[8]));
     sessionStorage.setItem("supervisor_final_command_array",JSON.stringify(result[9]));
 
+
+
       $.mobile.loading().hide();
+      alert('Verification Record Submitted Successfully');
       $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 //$.mobile.changePage("dashboard",{ transition: "none", changeHash: true, reverse: false }); 
 }else {
